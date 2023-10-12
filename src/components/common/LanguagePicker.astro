@@ -1,7 +1,7 @@
 ---
 // import { languages } from '../../i18n/ui';
 const url = Astro.url.pathname;
-const idUrl = 'http://localhost:4321';
+const idUrl = 'https://hoshi-gakuen-bali.netlify.app';
 // console.log(url);
 ---
 
@@ -10,7 +10,7 @@ const idUrl = 'http://localhost:4321';
   class="py-2 rounded-md text-sm font-medium bg-white dark:bg-dark text-gray-700 dark:text-gray-300 focus:ring-1 focus:ring-blue-500 focus:border-blue-500 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-150 ease-in-out uppercase"
   data-aw-select-language
 >
-  <option class="py-1" value="http://localhost:4322/" selected> 🇯🇵 日本語</option>
+  <option class="py-1" value="https://jpn-hoshi-gakuen-bali.netlify.app/" selected> 🇯🇵 日本語</option>
   <!-- <option class="py-1" value="http://localhost:4321/"> 🇮🇩 Indonesia</option> -->
   <option class="py-1" value={`${idUrl + url}`}> 🇮🇩 Indonesia</option>
 </select>
