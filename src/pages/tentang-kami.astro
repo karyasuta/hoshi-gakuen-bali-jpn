@@ -5,7 +5,13 @@ import Hero from '~/components/widgets/Hero.astro';
 import Stats from '~/components/widgets/Stats.astro';
 // import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
-import Content from '~/components/widgets/Content.astro';
+// import Content from '~/components/widgets/Content.astro';
+
+// import avatars
+import maria from '~/assets/images/staff/maria.jpg';
+import made from '~/assets/images/staff/made.jpg';
+import ganing from '~/assets/images/staff/ganing.jpg';
+import wiba from '~/assets/images/staff/wiba.jpg';
 
 const metadata = {
   title: '当機関について',
@@ -27,14 +33,13 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel feugiat augue, pretium molestie augue.
-      Etiam vestibulum quis lectus at malesuada. Mauris dolor diam, aliquam sed lorem quis, accumsan vehicula tortor.
-      Curabitur scelerisque, mi in porta interdum, risus enim imperdiet quam, vitae venenatis justo ante ac magna. Duis
-      interdum vitae erat eu consectetur. Ut blandit sapien velit, vitae molestie lectus vulputate quis. <br />
-       Aliquam placerat libero a arcu suscipit, at efficitur turpis elementum. Nam vitae suscipit dolor. In vitae nisl
-      quam. Nam ut dapibus diam. Praesent tristique sapien ligula, et cursus orci consectetur a. Sed viverra sed arcu ut
-      sodales. Quisque sem quam, lacinia ut nunc id, accumsan dictum velit. Cras interdum finibus elit, varius bibendum
-      elit elementum eleifend. Vestibulum mollis fermentum justo vel commodo.
+      帰国後は2022年まで送り出し機関の運営に携わりました。数年間送り出し機関を管理してきた経験をもとに、自分の送り出し機関を管理したいと思っています。<br
+      />
+       我々の手本である 素晴らしい国ので、日本とインドネシアとの橋渡しとなる、
+      技能実習生の日本語に貢献するために、2022年に政府認可の送り出し機関として <span class="font-bold"
+        >LPK HOSHI GAKUEN</span
+      >
+       BALIを設立しました。現在までに、様々な分野での技能実習生を送り出しをさせていただいております。
     </Fragment>
   </Hero>
 
@@ -51,292 +56,88 @@ const metadata = {
     ]}
   />
 
-  <!-- Features3 Widget ************** -->
+  <div class="min-h-screen flex items-center justify-center px-4">
+    <div class="max-w-4xl bg-white w-full rounded-lg shadow-xl">
+      <div class="p-4 border-b">
+        <h2 class="text-2xl">会社概要</h2>
+      </div>
+      <div>
+        <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
+          <p class="text-gray-600">社名</p>
+          <p>LPK HOSHI GAKUEN BALI</p>
+        </div>
+        <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
+          <p class="text-gray-600">設立</p>
+          <p>2022年</p>
+        </div>
+        <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
+          <p class="text-gray-600">所在地</p>
+          <p>Jl. Raya Puri Gading, Ruko A1/02A Jimbaran, Kecamatan Kuta Selatan, Kabupaten Badung, Bali, Indonesia</p>
+        </div>
+        <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
+          <p class="text-gray-600">代表者</p>
+          <p>Ni Ketut Mariatika Dewi</p>
+        </div>
+        <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
+          <p class="text-gray-600">事業案内</p>
+          <ol role="list">
+            <li>
+              <span class="font-medium">1.</span> 外国人技能実習生送り出し機関:
+              <ol class="ml-5" type="a">
+                <li><span class="font-medium">a.</span> 技能実習生候補者の募集・選抜</li>
+                <li><span class="font-medium">b.</span> 入国前教育（日本語・文化・マナー等）</li>
+                <li><span class="font-medium">c.</span> 実習生の対応・手続き（健康診断・出国支援等）</li>
+              </ol>
+            </li>
+            <li><span class="font-medium">2.</span> 日本滞在中の技能実習生のケア・実習中の対応</li>
+            <li><span class="font-medium">3.</span> 帰国後技能実習生のスキルアップと就業支援</li>
+          </ol>
+        </div>
+        <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
+          <p class="text-gray-600">URL</p>
+          <p><a href="https://hoshi-gakuen-bali.netlify.app/">https://hoshi-gakuen-bali.netlify.app/</a></p>
+        </div>
+        <div class="md:grid md:grid-cols-2 hover:bg-gray-50 md:space-y-0 space-y-1 p-4 border-b">
+          <p class="text-gray-600">Eメール</p>
+          <p><a href=" mailto:infohoshigakuenbali@gmail.com ">infohoshigakuenbali@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
-    columns={3}
-    isBeforeContent={true}
-    items={[
-      {
-        title: 'Educational',
-        description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Interior Design',
-        description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Photography',
-        description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
-      },
-    ]}
-  /> -->
+  <!-- Staff Section -->
 
-  <!-- Features3 Widget ************** -->
-
-  <!-- <Features3
-    columns={3}
-    isAfterContent={true}
-    items={[
-      {
-        title: 'E-commerce',
-        description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Blog',
-        description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Business',
-        description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Medical',
-        description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
-      },
-    ]}
-    image={{
-      src: 'https://scontent.fcgk35-1.fna.fbcdn.net/v/t39.30808-6/296042390_114611691326071_7207060734715597378_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=49d041&_nc_eui2=AeHWU3FPxeMnecgE479SHrsNlSlsOOxBMOSVKWw47EEw5HgIWfEdLD-a_4xrtA11pThQat33SpuQee6Of1raGXQQ&_nc_ohc=E-dC177eBrAAX-LyqJD&_nc_zt=23&_nc_ht=scontent.fcgk35-1.fna&oh=00_AfBUlrWNHp8aeoc9SIecarkAvtwiLVEcQBfby6MtcJXQJg&oe=65103670',
-      alt: 'Colorful Image',
-    }}
-  /> -->
-
-  <Content
-    isReversed
-    title="当社のビジョン："
-    image={{
-      src: 'https://scontent.fcgk6-2.fna.fbcdn.net/v/t39.30808-6/373318908_299281359525769_1915232990839057849_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=49d041&_nc_eui2=AeGX13YxzDRSPKowpCLvEh5of8UeuyFUgmh_xR67IVSCaB45-0jEhY3kNzd2zvYlGotKH5Ts0PuDgCV3Oup0NLIR&_nc_ohc=Dj_73W0eGJcAX-92hmE&_nc_ht=scontent.fcgk6-2.fna&oh=00_AfDhVRp_GdxAy3j0mCAmcUapX0Fx6VpZHgNFLxp1Xhii8A&oe=6511F526',
-      alt: 'Visi LPK Hoshi Gakuen Bali',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">有能な人材の創出</h3>
-       LPK星学園バリでは、グローバル時代に通用する有能で質の高い人材の育成に全力で取り組んでいます。
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-red-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <Content
-    isAfterContent
-    title="会社の使命:"
-    items={[
-      {
-        title: 'Lorem ipsum dolor sit amet',
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel feugiat augue, pretium molestie augue. Etiam vestibulum quis lectus at malesuada.`,
-        icon: 'tabler:number-1',
-      },
-      {
-        title: 'Lorem ipsum dolor sit amet',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel feugiat augue, pretium molestie augue. Etiam vestibulum quis lectus at malesuada.',
-        icon: 'tabler:number-2',
-      },
-    ]}
-    image={{
-      src: 'https://scontent.fcgk6-2.fna.fbcdn.net/v/t39.30808-6/366722293_290519963735242_6316633224229721837_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=49d041&_nc_eui2=AeEU6nYUrL0zUidIfAdegS3W8y6iM4eVLOXzLqIzh5Us5fDB_6t3YmYY2xGQDsktiPsDTss7gz6ZlJTGy4eAvOZy&_nc_ohc=P90rtss8jGoAX8JZHrY&_nc_ht=scontent.fcgk6-2.fna&oh=00_AfAThO4kK3NUcT_6QIg04nKgYm4ap3vlryGXjtiDTsuGig&oe=6512C7A9',
-      alt: 'Misi LPK Hoshi Gakuen Bali',
-    }}
-  >
-    <Fragment slot="content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel feugiat augue:
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-red-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <Content
-    isAfterContent
-    isReversed
-    title="会社の目標:"
-    items={[
-      {
-        title: 'Lorem ipsum dolor sit amet',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel feugiat augue, pretium molestie augue. Etiam vestibulum quis lectus at malesuada.',
-        icon: 'tabler:number-1',
-      },
-      {
-        title: 'Lorem ipsum dolor sit amet',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel feugiat augue, pretium molestie augue. Etiam vestibulum quis lectus at malesuada.',
-        icon: 'tabler:number-2',
-      },
-      {
-        title: 'Lorem ipsum dolor sit amet',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel feugiat augue, pretium molestie augue. Etiam vestibulum quis lectus at malesuada.',
-        icon: 'tabler:number-3',
-      },
-      {
-        title: 'Lorem ipsum dolor sit amet',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel feugiat augue, pretium molestie augue. Etiam vestibulum quis lectus at malesuada.',
-        icon: 'tabler:number-4',
-      },
-    ]}
-    image={{
-      src: 'https://scontent.fcgk6-2.fna.fbcdn.net/v/t39.30808-6/361223427_272447172209188_6211942584959431125_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=49d041&_nc_eui2=AeFvNOu075TKu_6wsuKruo2An869NqayCryfzr02prIKvK3XG0h66SeymI2i1y-KNGaYiBQogUGbH09s9rt8iQ5s&_nc_ohc=_0aFIdoE0d0AX-pbHzP&_nc_oc=AQlhRuQqlBelX95q245LuPc2pvSp3pg6H1tYMVYRp5wIQfr36NndIpozRQ7nV2Fa1_4&_nc_ht=scontent.fcgk6-2.fna&oh=00_AfBzjES3UYeVjCg_79OqnTL0pfkd8BtiQGp1N74XUuWe5w&oe=6511F647',
-      alt: 'Tujuan LPK Hoshi Gakuen Bali',
-    }}
-  >
-    <Fragment slot="content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel feugiat augue:
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-red-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Steps2 Widget ****************** -->
-
-  <!-- <Steps2
-    title="Visi Kami:"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
-    items={[
-      {
-        title: 'Customer-centric approach',
-        description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
-        icon: 'tabler:number-1',
-      },
-      {
-        title: 'Constant Improvement',
-        description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
-      },
-      {
-        title: 'Ethical Practices',
-        description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
-      },
-    ]}
-  /> -->
-
-  <!-- Steps2 Widget ****************** -->
-
-  <!-- <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
-    isReversed={true}
-    callToAction={{
-      text: 'See more',
-      href: '/',
-    }}
-    items={[
-      {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
-        icon: 'tabler:globe',
-      },
-      {
-        title: 'Positive customer feedback and reviews',
-        description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
-        icon: 'tabler:message-star',
-      },
-      {
-        title: 'Awards and recognition as industry experts',
-        description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
-        icon: 'tabler:award',
-      },
-    ]}
-  /> -->
-
-  <!-- Features2 Widget ************** -->
-
-  <!-- <Features2
-    title="Our locations"
-    tagline="Find us"
-    columns={4}
-    items={[
-      {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
-      },
-      {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
-      },
-      {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
-      },
-      {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
-      },
-    ]}
-  /> -->
   <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
       <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
           <span class="text-accent">星学園バリ</span>のチーム
         </h2>
-        <!-- <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-          Explore the whole collection of open-source web components and elements built with the utility classes from
-          Tailwind
-        </p> -->
       </div>
       <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <div class="text-center text-gray-500 dark:text-gray-400">
-          <img class="mx-auto mb-4 w-36 h-36 rounded-lg" src="~/assets/images/staff/maria.jpg" alt="Maria Avatar" />
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg" src={maria.src} alt="Maria Avatar" />
           <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             <a href="#">マリア</a>
           </h3>
           <p>社長</p>
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
-          <img class="mx-auto mb-4 w-36 h-36 rounded-lg" src="~/assets/images/staff/made.jpg" alt="Made Avatar" />
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg" src={made.src} alt="Made Avatar" />
           <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             <a href="#">マデ</a>
           </h3>
           <p>次長</p>
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
-          <img class="mx-auto mb-4 w-36 h-36 rounded-lg" src="~/assets/images/staff/ganing.jpg" alt="Ganing Avatar" />
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg" src={ganing.src} alt="Ganing Avatar" />
           <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             <a href="#">ガニン</a>
           </h3>
           <p>教師</p>
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
-          <img class="mx-auto mb-4 w-36 h-36 rounded-lg" src="~/assets/images/staff/wiba.jpg" alt="Wiba Avatar" />
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg" src={wiba.src} alt="Wiba Avatar" />
           <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             <a href="#">ウィバ</a>
           </h3>
