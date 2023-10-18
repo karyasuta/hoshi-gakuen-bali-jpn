@@ -20,7 +20,6 @@
     "@fontsource-variable/inter": "^5.0.8",
     "astro": "^3.0.12",
     "astro-icon": "^1.0.0-next.2",
-    "astro-netlify-cms": "^0.5.4",
     "limax": "4.1.0",
     "lodash.merge": "^4.6.2",
     "unpic": "^3.10.0"
